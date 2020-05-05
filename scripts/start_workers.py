@@ -4,6 +4,7 @@ Convenience executable to start celery worker across the cluster.
 from fabric import ThreadingGroup
 import argparse
 
+# not working with authentication
 
 def main(hosts, concurrency):
     with ThreadingGroup(*hosts) as sg:
